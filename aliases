@@ -1,0 +1,28 @@
+#####################
+#   Linux Commands
+#####################
+alias ls="ls -A"
+alias ll="ls -lh"
+
+#####################
+#   Rails
+#####################
+alias bx="bundle exec"
+
+#####################
+#   Git
+#####################
+alias g="git"
+alias gs="git status"
+alias gd="git diff"
+alias gb="git branch"
+alias ga="git add"
+alias gc="git commit -v"
+alias gl="git log"
+alias gpr="git pull --rebase"
+
+####################
+# Node
+####################
+alias ni="npm install"
+alias bi="bower install"

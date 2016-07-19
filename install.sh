@@ -1,9 +1,9 @@
 # Use provided aliases unless one exists
 function exec() {
-  ln -s $PWD/aliases $HOME/.aliases
-  ln -s $PWD/gitconfig $HOME/.gitconfig
-  ln -s $PWD/bash_profile $HOME/.bash_profile
-  ln -s $PWD/zshrc $HOME/.zshrc
+  ln -s $PWD/files/aliases $HOME/.aliases
+  ln -s $PWD/files/gitconfig $HOME/.gitconfig
+  ln -s $PWD/files/bash_profile $HOME/.bash_profile
+  ln -s $PWD/files/vimrc $HOME/.vimrc
 }
 
 if [ -e $HOME/.aliases -o -e $HOME/.gitconfig -o -e $HOME/.bash_profile ]; then

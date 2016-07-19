@@ -10,6 +10,9 @@ if [ -r ~/.bashrc ]; then
   source ~/.bashrc
 fi
 
+# Source rbenv to manage active ruby versions
+# eval "$(rbenv init -)"
+
 # Terminal customizations
 export CLICOLOR=1
 
@@ -23,3 +26,6 @@ print_prompt_title () {
 
 PROMPT_COMMAND=print_prompt_title
 export PS1="o "
+
+# iTerm shell integration
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"

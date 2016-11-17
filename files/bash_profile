@@ -10,22 +10,17 @@ if [ -r ~/.bashrc ]; then
   source ~/.bashrc
 fi
 
-# Source rbenv to manage active ruby versions
-# eval "$(rbenv init -)"
-
-# Terminal customizations
+# Terminal colors
 export CLICOLOR=1
 
-PURPLE='\e[1;35m'
-GREEN='\e[0;32m'
-TEXTRESET='\e[0m'
+if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
+  GIT_PROMPT_THEME=Default
+  source "$(brew --prefix bash-git-prompt)/share/gitprompt.sh"
+fi
 
-print_prompt_title () {
-  printf "\n $PURPLE%s$GREEN in %s \n$TEXTRESET" "$USER" "$PWD"
-}
-
-PROMPT_COMMAND=print_prompt_title
-export PS1="o "
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  source $(brew --prefix)/etc/bash_completion
+fi
 
 # iTerm shell integration
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"

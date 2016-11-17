@@ -3,6 +3,7 @@ function exec() {
   ln -s $PWD/files/aliases $HOME/.aliases
   ln -s $PWD/files/gitconfig $HOME/.gitconfig
   ln -s $PWD/files/bash_profile $HOME/.bash_profile
+  ln -s $PWD/files/gitexcludes $HOME/.gitexcludes
   ln -s $PWD/files/vimrc $HOME/.vimrc
 }
 

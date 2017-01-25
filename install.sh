@@ -1,1 +1,0 @@
-./load-dependencies.sh && ./load-files.sh

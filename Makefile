@@ -1,8 +1,10 @@
-install:
-	./load-dependencies.sh && ./load-dotfiles.sh
-
 install-deps:
-	./load-dependencies.sh
+	./scripts/install-deps.sh
 
 install-dotfiles:
-	./load-dotfiles.sh
+	./scripts/install-dotfiles.sh
+
+uninstall-dotfiles:
+	./scripts/uninstall-dotfiles.sh
+
+install: install-deps install-dotfiles

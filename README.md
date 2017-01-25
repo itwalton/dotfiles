@@ -1,21 +1,28 @@
 # Dotfiles
 
-A collection of dotfiles and brew dependencies
+A collection of my preferred dotfiles and system dependencies intended to bootstrap new OSX environments
 
-## Installation
+## download from github
 
-1. `git clone git@github.com:itwalton/dotfiles.git`
-2. `cd dotfiles/`
-3. `make install-all`
+`git clone git@github.com:itwalton/dotfiles.git`
 
-### Install Dependencies
+### install everything
 
-Installs Homebrew and commonly used recipes/casks
+`make install`
 
-1. `make install-deps`
+### brew/npm dependencies
 
-### Install Dotfiles
+A collection of brew recipes (gpg, node, etc.) and applications (chrome, flycut, etc.)
 
-Installs commonly used aliases and vim/git configs
+`make install-deps`
 
-1. `make install-dotfiles`
+### install dotfiles
+
+The aliases, bash_profile, gitconfig, gitexcludes, and vimrc dotfiles
+*Note*: Stores backups of existing files to bak/
+
+`make install-dotfiles`
+
+To uninstall:
+
+`make uninstall-dotfiles`

@@ -17,8 +17,8 @@ if [ ! brew info brew-cask &>/dev/null ]; then
   brew tap caskroom/cask
 fi
 
-CASKS=(google-chrome sublime-text evernote spotify divvy flycut)
+CASKS=(google-chrome sublime-text visual-studio-code sourcetree evernote spotify divvy flycut)
 brew cask install ${CASKS[@]}
 
 # Global npm dependencies
-npm install -g dwupload
+# npm install -g dwupload

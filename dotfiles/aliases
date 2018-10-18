@@ -26,4 +26,13 @@ alias gpr="git pull --rebase"
 # Node
 ####################
 alias ni="npm install"
-alias bi="bower install"
+
+####################
+# Docker/Kubernetes
+####################
+alias dr="docker"
+alias drl="docker ps -l -q"
+alias dri="docker images"
+
+alias ks="kubectl"
+

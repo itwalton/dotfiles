@@ -7,7 +7,7 @@ fi
 brew update
 
 # Recipes
-RECIPES=(bash bash-git-prompt bash-completion vim wget git node gpg)
+RECIPES=(bash bash-git-prompt bash-completion vim wget git node gpg thefuck)
 
 brew install ${RECIPES[@]}
 brew cleanup

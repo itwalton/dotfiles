@@ -1,24 +1,20 @@
-# Install Homebrew
+# Homebrew
+RECIPES=(vim openssl git node go)
+CASKS=(brave-browser google-chrome sublime-text visual-studio-code divvy flycut)
+
 if [ ! $(which brew) ]; then
   echo "Installing homebrew..."
-  ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
 brew update
-
-# Recipes
-RECIPES=(bash bash-git-prompt bash-completion vim wget git node gpg thefuck)
-
 brew install ${RECIPES[@]}
+brew cask install ${CASKS[@]}
 brew cleanup
 
-# Casks
-if [ ! brew info brew-cask &>/dev/null ]; then
-  brew tap caskroom/cask
+# Oh my zsh
+if [ ! -d ${HOME}/.oh-my-zsh ]; then
+  echo "Installing oh-my-zsh..."
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 fi
 
-CASKS=(google-chrome sublime-text visual-studio-code sourcetree evernote spotify divvy flycut)
-brew cask install ${CASKS[@]}
-
-# Global npm dependencies
-# npm install -g dwupload

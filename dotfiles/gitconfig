@@ -5,13 +5,14 @@
 [user]
 	name = Ian Walton
 	email = itwalton90@gmail.com
+	signingkey = 42618011
 [core]
 	excludesfile = /Users/ian/.gitexcludes
 	autocrlf = input
 	editor = vim
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
+	path = 
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
@@ -36,3 +37,5 @@
         added = yellow
         changed = green
         untracked = cyan
+[gpg]
+	program = gpg1

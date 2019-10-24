@@ -1,13 +1,8 @@
 #####################
-#   Linux Commands
+#   Linux
 #####################
 alias ls="ls -A"
 alias ll="ls -lh"
-
-#####################
-#   Rails
-#####################
-alias bx="bundle exec"
 
 #####################
 #   Git
@@ -17,8 +12,7 @@ alias gs="git status"
 alias gd="git diff"
 alias gb="git branch"
 alias ga="git add"
-alias gc="git commit  -v"
-alias gsc="git commit -S -v"
+alias gc="git commit -S -v"
 alias gl="git log"
 alias gpr="git pull --rebase"
 
@@ -35,4 +29,3 @@ alias drl="docker ps -l -q"
 alias dri="docker images"
 
 alias ks="kubectl"
-

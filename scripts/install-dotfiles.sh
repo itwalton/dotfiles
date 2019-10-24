@@ -1,4 +1,4 @@
-FILES=("aliases" "bash_profile" "vimrc" "gitconfig" "gitexcludes")
+FILES=("aliases" "zshrc" "vimrc" "gitconfig" "gitexcludes")
 
 for filename in ${FILES[@]}; do
   if [ -e $HOME/.$filename ]; then

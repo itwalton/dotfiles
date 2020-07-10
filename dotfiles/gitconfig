@@ -5,7 +5,7 @@
 [user]
 	name = Ian Walton
 	email = itwalton90@gmail.com
-	signingkey = 42618011
+	signingkey = FBF4FB3D0495068F
 [core]
 	excludesfile = /Users/ian/.gitexcludes
 	autocrlf = input
@@ -38,4 +38,6 @@
         changed = green
         untracked = cyan
 [gpg]
-	program = gpg1
+	program = /usr/local/bin/gpg
+[commit]
+	gpgsign = true

@@ -9,3 +9,6 @@ source $ZSH/oh-my-zsh.sh
 if [ -r ~/.aliases ]; then
   source ~/.aliases
 fi
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
+

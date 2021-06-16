@@ -1,4 +1,4 @@
-FILES=("aliases" "zshrc" "vimrc" "gitconfig" "gitexcludes")
+FILES=("aliases" "zshrc" "vimrc" "gitconfig" "gitignore_global" "stCommitMsg")
 
 for filename in ${FILES[@]}; do
   if [ -e $HOME/.$filename ]; then

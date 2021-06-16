@@ -1,4 +1,4 @@
-FILES=("aliases" "bash_profile" "vimrc" "gitconfig" "gitexcludes")
+FILES=("aliases" "zshrc" "vimrc" "gitconfig" "gitignore_global" "stCommitMsg")
 
 for filename in ${FILES[@]}; do
   echo "Removing $filename"
